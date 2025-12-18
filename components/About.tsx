@@ -134,36 +134,39 @@ export default function About() {
               </div>
 
               {/* Stats Grid */}
-              <div className="grid grid-cols-2 gap-3 sm:gap-4 mb-6 sm:mb-8">
+              <div className="grid grid-cols-2 gap-2 sm:gap-4 mb-6 sm:mb-8">
                 <motion.div
-                  className="bg-gray-100 dark:bg-dark-700 p-3 sm:p-4 rounded-lg"
+                  className="bg-gray-100 dark:bg-dark-700 p-2.5 sm:p-4 rounded-lg flex flex-col items-center justify-center text-center"
                   whileHover={{ scale: 1.05, backgroundColor: 'rgba(139, 92, 246, 0.1)' }}
                   transition={{ duration: 0.2 }}
                 >
-                  <div className="text-xl sm:text-2xl font-bold text-primary-400">
+                  <div className="text-lg sm:text-2xl font-bold text-primary-400 mb-1">
                     <AnimatedCounter value={stats.experience} suffix="+" />
                   </div>
-                  <div className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">Years Experience</div>
+                  <div className="text-[10px] sm:text-sm text-gray-600 dark:text-gray-400 leading-tight text-center">
+                    <span className="hidden sm:inline">Years Experience</span>
+                    <span className="sm:hidden">Experience</span>
+                  </div>
                 </motion.div>
                 <motion.div
-                  className="bg-gray-100 dark:bg-dark-700 p-3 sm:p-4 rounded-lg"
+                  className="bg-gray-100 dark:bg-dark-700 p-2.5 sm:p-4 rounded-lg flex flex-col items-center justify-center text-center"
                   whileHover={{ scale: 1.05, backgroundColor: 'rgba(139, 92, 246, 0.1)' }}
                   transition={{ duration: 0.2 }}
                 >
-                  <div className="text-xl sm:text-2xl font-bold text-primary-400">
+                  <div className="text-lg sm:text-2xl font-bold text-primary-400 mb-1">
                     <AnimatedCounter value={stats.projects} suffix="+" />
                   </div>
-                  <div className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">Projects</div>
+                  <div className="text-[10px] sm:text-sm text-gray-600 dark:text-gray-400 leading-tight text-center">Projects</div>
                 </motion.div>
                 <motion.div
-                  className="bg-gray-100 dark:bg-dark-700 p-3 sm:p-4 rounded-lg col-span-2"
+                  className="bg-gray-100 dark:bg-dark-700 p-2.5 sm:p-4 rounded-lg col-span-2 flex flex-col items-center justify-center text-center"
                   whileHover={{ scale: 1.05, backgroundColor: 'rgba(139, 92, 246, 0.1)' }}
                   transition={{ duration: 0.2 }}
                 >
-                  <div className="text-xl sm:text-2xl font-bold text-primary-400">
+                  <div className="text-lg sm:text-2xl font-bold text-primary-400 mb-1">
                     BSSE
                   </div>
-                  <div className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">Qualification</div>
+                  <div className="text-[10px] sm:text-sm text-gray-600 dark:text-gray-400 leading-tight text-center">Qualification</div>
                 </motion.div>
               </div>
 
